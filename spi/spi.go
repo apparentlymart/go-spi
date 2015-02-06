@@ -32,6 +32,7 @@ const (
 type Configurator interface {
 	SetMode(mode Mode) error
 	SetBitOrder(order BitOrder) error
+	SetMaxSpeedHz(speed uint32) error
 }
 
 // ReadableDevice represents an SPI device that can only be written to.
